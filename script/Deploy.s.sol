@@ -22,7 +22,7 @@ contract DeployScript is Script {
         // NOTE: use respective Permit2 address for the chain you want to deploy on
         address PERMIT2_MAINNET = 0x000000000022D473030F116dDEE9F6B43aC78BA3;
         // NOTE: specify the service provider address here
-        address serviceProvider = address(0);
+        address serviceProvider = 0x701F7fdfabd99DFC3c0b2B226fD379d4Be93DFf3;
 
         planPrices[0] = 100 * 10 ** IERC20(USDC_MAINNET).decimals();
         ISubNFT.SubscriptionConfig memory subscriptionConfig = ISubNFT.SubscriptionConfig({
